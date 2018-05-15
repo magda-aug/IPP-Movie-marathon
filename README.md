@@ -27,5 +27,5 @@ The program realizes these assumptions using list and tree structures.
   It is at most linear time in regard to product of k and number of users for which operation is recursively performed.
 
 ## Makefile
-Command make creates executable file main.
+Command make creates executable file main.\
 Command make clean removes executable file and all files created during compilation.
