@@ -6,19 +6,19 @@ The program realizes these assumptions using list and tree structures.
 
 ## Supported operations
 
-* addUser <parentUserId> <userId> 
+* addUser &lt parentUserId &gt &lt userId &gt     
   User with ID parentUserId adds user with ID userId. Constant time operation.
 
-* delUser <userId> 
+* delUser &lt userId &gt    
   User with ID userId checks out. Its movie preferences are also deleted. Users added by user userId become descendants of userId's parent. Deleting user is constant time operation. Forgetting movie preferences is linear time operation. 
 
-* addMovie <userId> <movieRating> 
+* addMovie &lt userId &gt &lt movieRating &gt    
   User with ID userId adds movie with ID movieRating to its movie preferences. It is at most linear time in regard to number of user's preferences operation.
 
-* delMovie <userId> <movieRating> 
+* delMovie &lt userId &gt &lt movieRating &gt    
   User with ID userId deleted filmwith ID movieRating from its preferences. At most linear time in regard to number of user's preferences operation.
 
-* marathon <userId> <k> 
+* marathon &lt userId &gt &lt k &gt  
   Finds at most k movie IDs with highest rating from:  
     + preferences of userId;
 
